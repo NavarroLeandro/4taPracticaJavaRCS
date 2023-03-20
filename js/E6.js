@@ -10,3 +10,15 @@
 // Crear al menos 2 objetos libros y utilizar el método mostrarLibro();
 // Por último, indicar cuál de los 2 objetos “libros” tiene más páginas.
 
+class Libro {
+    constructor(ISBN, Titulo, Autor, NumeroDePaginas) {
+     this.Autor = Autor;
+     this.ISBN = ISBN;
+     this.Titulo = Titulo;
+     this.NumeroDePaginas = NumeroDePaginas;
+    }
+    mostrarLibro(){
+        document.write("<p> El libro" + Libro.Titulo +"con ISBN"+ Libro.ISBN +" creado por el autor"+ Libro.Autor+"tiene páginas "+Libro.NumeroDePaginas +". </p>")
+    }
+}
+
